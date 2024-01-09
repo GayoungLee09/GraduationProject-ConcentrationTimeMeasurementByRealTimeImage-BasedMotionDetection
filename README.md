@@ -7,11 +7,14 @@
  프로젝트의 주제는 캠스터디를 이용하여 사용자의 움직임을 실시간으로 분석하여 알고리즘을 통해 사용자의 집중시간 및 비
 집중시간을 측정하는 것입니다. 이를 통해 사용자에게 일/주/월 별 공부시간을 확인시키고 5분 이상 비집중 행동을 할 시
 어플리케이션을 통해 사용자에게 알람을 가게 하는 성능을 제공합니다.
+<br/>
+<br/>
 
 ## 2. 사용한 기술 및 방법 설명
 <img width="530" alt="스크린샷 2024-01-09 오후 2 33 14" src="https://github.com/GayoungLee09/GraduationProject-ConcentrationTimeMeasurementByRealTimeImage-BasedMotionDetection/assets/81952512/6b6263d4-d22c-46a4-bf87-da69f911d9c5">
 
 (프로젝트 프로세스)
+<br/>
 
 ### 1) 데이터 수집 및 전처리
  1차적으로 유튜브 Study with me 영상과 Zoom 독서실 영상을 수집하였습니다. 이후 Transfer Learning을 위해 추가적으로 Zoom 독서실 영상과 별하(협업기업)에서 제공 받은 데이터를 수집하였습니다. 수집한 행동들은 총 6가지의 항목으로 집중 행동은 Reading, Writing, Using computer이며 비집중 행동은 Leaving seat, Sleeping, Using smartphone입니다.
