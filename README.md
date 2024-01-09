@@ -32,6 +32,7 @@ ResNet은 기본적으로 VGG-19 의 구조를 뼈대로 하며, convolution 층
 <img width="50%" alt="스크린샷 2024-01-09 오후 2 34 40" src="https://github.com/GayoungLee09/GraduationProject-ConcentrationTimeMeasurementByRealTimeImage-BasedMotionDetection/assets/81952512/b90887d8-7679-45d2-a219-1c52e06ca43e">
 
 (좌: 데이터크기-유사성그래프, 우: 각 상황에 따른 Fine-tuning 방법)
+
  우리는 데이터의 크기가 크고 유사도가 높은 데이터셋에 Transfer Learning을 적용하려고 하므로, 제2사분면에 해당하는 것을 확인할 수 있었습니다. 이는 Convolutional base의 일부분은 고정한 상태로, 나머지 계층과 Classifier를 새로 학습시키는 방법입니다.
    따라서 Transfer Learning을 위해 Train dataset으로 YouTube study with me 영상과 Zoom 독서실 영상을 사용했으며 별하(협업기업) 영상 데이터와 직접 촬영한 데이터, YouTube study with me, Zoom 독서실 영상을 Test dataset으로 사용하였습니다.
 전이학습 후 정확도는 Mobilenet V2+3D 모델의 성능이 가장 높아 최종 모델로 선정하였습니다.
@@ -41,6 +42,7 @@ ResNet은 기본적으로 VGG-19 의 구조를 뼈대로 하며, convolution 층
  노트북이나 스마트폰으로 공부하는 모습을 촬영하며 캠스터디를 시작하면 어플이 행동을 예측해 집중시간과 비집중시간을 측정하고, 비집중 시간이 지속될 경우 알람이 울리게 됩니다. 공부가 끝나면 연동된 모델로 결과를 분석해 일간/주간/월간 공부시간을 확인할 수 있으며 행동별로 시간을 확인할 수 있는 그래프를 제공하였습니다.
  <img width="40%" alt="스크린샷 2024-01-09 오후 2 36 34" src="https://github.com/GayoungLee09/GraduationProject-ConcentrationTimeMeasurementByRealTimeImage-BasedMotionDetection/assets/81952512/0bed64bc-cdeb-4aa6-9c10-48d205fd190b">
 
+(앱 실행 화면)
 
 ## 3. 느낀점
  캡스톤 디자인 프로젝트를 진행하면서 규모가 크고 체계적인 프로젝트를 수행할 수 있는 기회를 가졌습니다. 데이터 수집부터 모델 구현, 앱 구축까지의 End-to-end 과정을 경험했습니다. Mobilenet V2, Vggnet, Resnet, Shufflenet 등 다양한 모델을 구현하고 사용자의 행동을 예측해 보았습니다. 데이터 수집 단계부터 전처리 및 분석 방향을 설계하는 중요성을 깨닫게 되었고, 초기 수집한 데이터와 실제 사용자 환경의 데이터 간의 차이로 인한 정확도 저하 문제를 Transfer Learning을 통해 극복할 수 있었습니다.
