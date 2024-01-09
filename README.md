@@ -15,6 +15,7 @@
 
 (프로젝트 프로세스)
 <br/>
+<br/>
 
 ### 1) 데이터 수집 및 전처리
  1차적으로 유튜브 Study with me 영상과 Zoom 독서실 영상을 수집하였습니다. 이후 Transfer Learning을 위해 추가적으로 Zoom 독서실 영상과 별하(협업기업)에서 제공 받은 데이터를 수집하였습니다. 수집한 행동들은 총 6가지의 항목으로 집중 행동은 Reading, Writing, Using computer이며 비집중 행동은 Leaving seat, Sleeping, Using smartphone입니다.
